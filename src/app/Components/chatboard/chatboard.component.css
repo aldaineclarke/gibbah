@@ -1,0 +1,23 @@
+.chatboard{
+    padding: 1rem;
+    overflow-y:scroll;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-image: repeating-radial-gradient(circle at center center, transparent 0px, transparent 2px,rgba(0,0,0,0.03) 2px, rgba(0,0,0,0.03) 3px,transparent 3px, transparent 5px,rgba(0,0,0,0.03) 5px, rgba(0,0,0,0.03) 7px),repeating-radial-gradient(circle at center center, rgb(255,255,255) 0px, rgb(255,255,255) 9px,rgb(255,255,255) 9px, rgb(255,255,255) 21px,rgb(255,255,255) 21px, rgb(255,255,255) 31px,rgb(255,255,255) 31px, rgb(255,255,255) 40px); background-size: 20px 20px;
+    /* box-shadow: inset 2px 0 8px rgba(0,0,0,0.2); */
+}
+.chatboard::-webkit-scrollbar{
+    width: 5px;
+}
+.chatboard::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+.chatboard::-webkit-scrollbar-thumb{
+    background-color: var(--primary-3);
+}
+.chatboard::-webkit-scrollbar-thumb:hover{
+    background-color: var(--primary);
+}
+

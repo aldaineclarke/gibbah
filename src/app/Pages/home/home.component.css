@@ -1,0 +1,143 @@
+.d-100{
+    height: 100vh;
+}
+.container-content{
+    padding: 0 20px;
+}
+.content{
+    width: 1240px;
+    margin: auto;
+}
+
+.content-title{
+    font-size: 2.7rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+.developers{
+    padding: 3rem;
+}
+.outline-nr{
+    border-radius: 0;
+    border: 1px solid var(--primary);
+    background-color: transparent;
+    color: var(--primary)
+}
+.outline-nr:hover{
+    background-color: var(--primary);
+    color: var(--primary-0);
+}
+/* cards */
+.pricing-grid{
+    display:flex;
+    margin: 3rem 0;
+    justify-content: space-between;
+}
+.card{
+    display:flex;
+    flex-direction: column;
+    border: 1px solid var(--primary-1);
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.2);
+    padding: 1rem 2rem;
+    align-items: center;
+    flex-basis: 25%;
+}
+.card__title{
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: var(--primary);
+}
+.card__cta{
+    align-self: stretch;
+    background-color: var(--primary);
+    color: var(--primary-0);
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+}
+.card__price{
+    margin-top: auto;
+    font-weight: bold;
+    position:relative;
+}
+.card__price .dollars{
+    font-size: 2.5rem;
+}
+
+.card__price .cents{
+    font-size: .8rem;
+    position:relative;
+    top: -20px;
+}
+/* cards */
+
+.container-grid{
+    display: grid;
+    grid-template-columns: 20rem auto;
+    width: 100%;
+    position:relative;
+    background-image: linear-gradient(white, #ECEFFD);
+}
+.content-body{
+    width: 80%;
+    
+}
+.sidenav{
+    position:sticky;
+    --webkit-position:sticky;
+    --moz-position:sticky;
+    top: calc(50% - 80px);
+
+    left:0;
+    width: 100%;
+    border: 1px solid black;;
+}
+.bg-red{
+    background-color: red;
+}
+.sidenav li{
+    margin: 1rem;
+}
+.active{
+    color: pink;
+}
+.hero{
+    min-height: 90vh;
+    background-color: var(--primary);
+
+}
+.intro{
+    padding-top: 4rem;
+    display:grid;
+    grid-template-columns: 40vw auto;
+    gap: 3rem;
+}
+.intro__text{
+    padding: 10px 0;
+    color: white;
+    width: 100%;
+}
+.intro__cta{
+    margin-top: 2rem;
+}
+.intro__title{
+    font-size: 3.7rem;
+    line-height: 4.2rem;
+    margin-bottom: 2rem;
+}
+.intro__img{
+    display:flex;
+    align-items: flex-end;
+}
+.intro__img img{
+    width:100%;
+    object-fit: contain;
+
+
+}
+.subtitle{
+    text-align: center;
+    font-size: 3rem;
+    color: var(--primary);
+    
+}

@@ -1,0 +1,79 @@
+<section>
+    <h2>Why use Gibbah Communication?</h2>
+<div class="container">
+    <div class="container-grid">
+        <div class="container-sidenav">
+            <div class="sidenav">
+                <ul>
+                    <li *ngFor="let nav of navItems">
+                        <a [href]="'#'+ nav.navId" [class.active]="nav.isActive">{{nav.navTitle}}</a>
+                    </li>
+    
+                </ul>
+            </div>
+    
+        </div>
+        <div class="container-content">
+            <div class="content d-100 " observe id="secure_messaging" (inView)="viewHandler($event)">
+                <div class="content-body">
+                    <h2 class="content-title">Your messages are and will always be private.</h2>
+                    <div class="content-grid">
+                        <div>
+                            <p>We take pride to inform you that even we don’t know the messages that you send. We have incorporated end to end encryption to ensure that only you and your  intended target have access to the chats you send</p>
+                        </div>
+                        <div class="content-img-wrapper">
+                            <img src="assets/IMG/secure-vault.svg" alt="Image denoting security">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="content d-100" observe id="real_time_communication" (inView)="viewHandler($event)">
+                <div class="content-body">
+                    <h2 class="content-title">Send and receive messages in real time. </h2>
+                    <div class="content-grid">
+                        <div class="content-img-wrapper">
+                            <img src="assets/IMG/real-time.svg" alt="Image denoting security">
+                        </div>
+                        <div>
+                            <p>We take pride to inform you that even we don’t know the messages that you send. We have incorporated end to end encryption to ensure that only you and your  intended target have access to the chats you send</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="content d-100" observe id="chatting_in_teams" (inView)="viewHandler($event)">
+                <div class="content-body">
+                    <h2 class="content-title">We also allow group chat to engage multiple users</h2>
+                    <div class="content-grid">
+                        <div>
+                            <p>We take pride to inform you that even we don’t know the messages that you send. We have incorporated end to end encryption to ensure that only you and your  intended target have access to the chats you send</p>
+                        </div>
+                        <div class="content-img-wrapper">
+                            <img src="assets/IMG/team-chat.svg" alt="Image denoting security">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content d-100" observe id="business_chat" (inView)="viewHandler($event)">
+                <div class="content-body">
+                    <h2 class="content-title">Have more control over your chats with an Business account. </h2>
+                    <div class="content-grid">
+                        <div class="content-img-wrapper">
+                            <img src="assets/IMG/business-chat.svg" alt="Image denoting security">
+                        </div>
+                        <div>
+                            <p>We take pride to inform you that even we don’t know the messages that you send. We have incorporated end to end encryption to ensure that only you and your  intended target have access to the chats you send</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+    
+           
+        </div>
+    
+    </div>
+    
+</div>
+</section>

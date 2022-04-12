@@ -1,0 +1,314 @@
+.chat-screen{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 400px auto;
+}
+.chat-section{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+/* CHAT HEADER STYLES */
+.chat-header{
+    background-color: var(--primary-0);
+    padding: 0 10px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.2);
+    min-height: 50px;
+    border: 1px solid var(--primary-1);
+}
+.recipient__info{
+    display: flex;
+    gap: 5px;
+}
+.recipient__status{
+    display:flex;
+    flex-direction: column;
+}
+.recipient__name{
+    font-size: .8rem;
+    font-weight: bold;
+}
+.recipient__status{
+    font-size: .6rem;
+    color: var(--primary-3);
+}
+.recipient__img{
+    display:flex;
+    align-items: center;
+}
+.recipient__img img{
+    
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 1px solid var(--accent);
+}
+.chat-options{
+    display:flex;
+    gap: 1rem;
+    
+}
+.search{
+    display: flex;
+    align-items:center;
+    gap: 5px;
+}
+.search input{
+    background:none;
+    border:none;
+    text-align:right;
+    padding-right: 5px;
+    font-weight: 600;
+    color: var(--primary-3);
+    height: 1.5rem;
+    border-radius: 20px 0 0 20px;
+}
+.search input::placeholder{
+    color: var(--primary-3);
+
+}
+.search input:focus{
+    outline: none;
+    /* background-color: white; */
+    box-shadow: var(--inset-shadow);
+
+}
+/* END CHAT HEADER STYLES */
+app-chatboard{
+    flex-grow: 1;
+    overflow-y: scroll;
+}
+app-chatboard::-webkit-scrollbar{
+    width: 0;
+}
+.chat-footer{
+    background-color: var(--primary-0);
+    box-shadow:0 -1px 8px rgba(0, 0, 0, 0.1);
+    /* padding: 10px; */
+}
+form.textbox{
+    display:flex;
+    padding: 1rem;
+}
+.textbox input[type="text"]{
+    flex-grow: 1;
+    height: 2rem;
+    border: 1px solid var(--primary-2);
+    border-radius: 5px 0 0 5px;
+    box-shadow: var(--inset-shadow);
+
+}
+.textbox input[type="text"]:focus{
+    border-color:var(--primary-3);
+    outline:none;
+
+
+}
+.textbox__btn{
+    color: var(--accent);
+    display: inline-block;
+    font-weight: bold;
+    border: 1px solid var(--primary-2);
+    border-left:none;
+    background-color: var(--accent-0);
+    border-radius: 0 5px 5px 0;
+    padding: 8px 30px;
+}
+
+/* Conversation Section */
+.convo__section{
+    display: grid;
+    grid-template-columns: auto;
+    background-color: var(--primary-0);
+    position:relative;
+    z-index: 1;
+    border-right: 1px solid var(--primary-1);
+}
+
+.convo__search{
+    min-height: 50px;
+    border-bottom: 1px solid var(--primary-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.convo__search input{
+    background-color: var(--primary-0);
+    height: 1.6rem;
+    border: none;
+    border-radius: 20px;
+    flex-basis: 85%;
+    padding-left: 10px;
+    box-shadow: var(--inset-shadow);
+}
+.convo__search input:focus{
+    outline: none;
+    border: 1px solid var(--primary-3)
+}
+/* Conversation Section */
+.router-area{
+    flex-grow: 1;
+    overflow-y: scroll;
+    /* border: 1px solid black; */
+}
+.router-area::-webkit-scrollbar{
+    width: 0
+}
+.convo__conversations{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin-left: 100px;
+    /* overflow: hidden; */
+}
+.floating-btn{
+    position:absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: var(--primary-1);
+    color: var(--primary);
+    height: 50px;
+    width: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2),-1px -1px 10px rgba(0, 0, 0, 0.2);
+    transition:background-color ease-in-out 300ms, transform linear 700ms;
+}
+.floating-btn:hover{
+    background-color: var(--primary-2);
+    transform: rotate(.375turn)
+}
+
+/* Side bar */
+.convo__sidebar{
+    width: 100px;
+    position:absolute;
+    left: 0;
+    top: 0;
+    z-index: 6;
+    height: 100vh;
+    background-color: var(--primary);
+    background-image: var(--pattern-gradient-1);
+    display:flex;
+    flex-direction: column;
+    box-shadow: 1px 0 6px rgba(0,0,0,0.2);
+    /* align-items:center; */
+    transition: 500ms ease-in-out width;
+    border-radius: 0 20px 20px 0;
+
+}
+.convo__sidebar.active{
+    width: 250px;
+}
+.sidebar__wrapper{
+    flex-grow:1;
+    display:flex;
+    flex-direction: column;
+    padding-left: 1.5rem;
+    /* align-items:center; */
+}
+.sidebar__nav{
+    padding: 0;
+    list-style-type: none;
+    display:flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.sidebar__nav li{
+    padding: 10px 5px; 
+    display: flex;
+    cursor: pointer;
+    /* border: 1px solid black; */
+}
+.sidebar__nav li a{
+    display:flex;
+    flex-grow: 1;
+    gap: 10px;
+    align-items: center;
+    color: var(--primary-0);
+    text-decoration: none;
+
+
+}
+.convo__sidebar .nav-title{
+    visibility: hidden;
+    opacity: 0;
+    transition: 500ms opacity ease-in-out; 
+}
+.convo__sidebar.active .nav-title{
+    visibility:visible;
+    opacity: 1;
+}
+
+.sidebar__nav li span:first-of-type{
+    display:flex;
+}
+.sidebar__nav li svg{
+    height: 1.6rem;
+    width: 1.6rem;
+    color:var(--primary-0);
+    stroke-width: 3;
+}
+.userImage-wrapper{
+    margin-top: 3rem;
+    height: 50px;
+    width: 50px;
+    align-self: flex-start;
+    transition: 500ms height ease-in, 500ms width ease-in, transform 500ms ease-in;
+}
+.convo__sidebar.active .userImage-wrapper{
+    height: 100px;
+    width: 100px;
+    /* align-self: center; */
+    transform: translateX(70%);
+}
+.userImage-wrapper img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+.userInfo{
+    margin: 1rem 0;
+    opacity: 0;
+    transform:translate(-200px, -100px);
+    transition: transform 500ms ease-in, opacity 700ms ease-in;
+}
+.convo__sidebar.active .userInfo{
+    transform:translate(0);
+    opacity: 1;
+}
+.userInfo p{
+    margin: 0;
+    font-size: .9rem;
+    text-align:center;
+    color:var(--primary-0)
+}
+.collapse{
+    display:flex;
+    text-align:center;
+    background-color: transparent;
+    border: none;
+    color: var(--primary-0);
+    transition: transform 500ms ease-in-out;
+}
+.collapse svg{
+    height:2.3rem;
+    width:2.3rem;
+    color: var(--primary-0);
+}
+
+/* Side bar */
+
+@keyframes slideOff {
+    
+}

@@ -1,0 +1,91 @@
+.content{
+    width: 1240px;
+    margin:auto;
+}
+.footer{
+
+}
+.footer__meta{
+    padding: 2rem;
+    font-size: .7rem;
+    border-top: 1px solid var(--primary-1);
+    display:flex;
+    justify-content: center;
+    gap: 1rem;
+    color:var(--primary);
+}
+.footer__meta a{
+    text-decoration: none;
+}
+.footer__meta a:hover{
+    text-decoration: underline;
+}
+
+.villan{
+    background-image: url('/assets/IMG/waves-primary.svg');
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 50vh;
+    width: 100%;
+    display:grid;
+    place-items:center;
+}
+.newsletter{
+    color: var(--primary-0);
+    text-align:center;
+}
+.newsletter h2{
+    font-size: 2.2rem;
+    margin-top:0;
+}
+form{
+    display:flex;
+
+}
+.newsletter input{
+    height: 2rem;
+    background-color: transparent;
+    color: var(--primary-0);
+    flex-grow:1;
+    border: 1px solid var(--primary-0);
+    padding-left: 10px;
+}
+.newsletter input:focus{
+    outline:none;
+}
+.newsletter input::placeholder{
+    color: var(--primary-0);
+}
+.newsletter button{
+    background-color: var(--accent);
+    border: 1px solid var(--accent);
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.footer__nav-wrapper{
+    margin: 2rem 0 1rem;
+    display:flex;
+    justify-content: space-between;
+}
+.footer__nav{
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style-type: none;
+}
+.footer__title{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.footer__nav a{
+    font-size: .8rem;
+    text-transform: uppercase;
+    text-decoration:none;
+    font-weight: 600;
+    color: var(--primary);
+}
+.footer__nav a:hover{
+    color:var(--accent);
+}

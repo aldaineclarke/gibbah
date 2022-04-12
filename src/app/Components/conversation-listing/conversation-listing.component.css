@@ -1,0 +1,19 @@
+.conversation-listing{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 100%;
+    position:relative;
+}
+.conversation-listing::-webkit-scrollbar{
+    width: 5px;
+}
+.conversation-listing::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+.conversation-listing::-webkit-scrollbar-thumb{
+    background-color: var(--primary-3);
+}
+.conversation-listing::-webkit-scrollbar-thumb:hover{
+    background-color: var(--primary);
+}

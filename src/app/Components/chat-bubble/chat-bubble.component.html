@@ -1,0 +1,12 @@
+<div class="bubble">
+    <div *ngIf="data; else typing">
+        <!-- <p class="bubble__header">Micheal</p> -->
+        <p class="bubble__data">This is an example of text message I will go beyond the max with of the button, I want to know if the button will still be true to the value set by me in the css file</p>
+        <p class="bubble__footer">9:38 AM</p>
+    </div>
+    <ng-template #typing>
+        <div class="typing-animation">
+            <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+        </div>
+    </ng-template>
+</div>
