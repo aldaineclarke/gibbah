@@ -1,1 +1,60 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+:root{
+    --primary: #1E3092;
+    --accent: #29ef1b;
+    --accent-0:#E8FBE7; 
+    --primary-0: #F9FAFF;
+    --primary-1:#ECEFFD; 
+    --primary-2: #BCC2DE;
+    --primary-3: #A6B2ED;
+    --pattern-gradient-1: repeating-linear-gradient(135deg, rgba(189,189,189,0.1) 0px, rgba(189,189,189,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(30,48,146),rgb(30,48,146));
+    background-size: 42px 42px;
+    --inset-shadow: inset 2px 2px 8px rgba(166, 178, 237, 0.262),inset -2px -2px 8px rgba(166, 178, 237, 0.262);
+}
+body{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+.btn{
+    display: inline-block;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: 300ms background-color ease-in;
+    border: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.btn-accent{
+    background-color: var(--accent);
+    color: var(--primary)
+}
+.btn-primary{
+    background-color: var(--primary);
+    color: white;
+}
+.btn-primary:hover{
+    background-color: #101d6a;
+}
+.btn-accent:hover{
+    background-color: #18a20e;
+}
+.bottom{
+    margin-top: auto;
+}
+.flex{
+    display:flex;
+}
+.form-control.ng-invalid{
+    border-color:red;
+}
+span.error{
+    font-weight: 400;
+    color: red;
+}
+.ml-auto{
+    margin-left: auto;
+}
