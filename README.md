@@ -1,6 +1,6 @@
 # Gibbah
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.4.
+Gibbah is a real time communication application that allows you to send messages to anyone with a gibbah account. This repository is linked with the <a href="https://github.com/aldaineclarke/chat-server">Chat Server</a>
 
 ## Development server
 
