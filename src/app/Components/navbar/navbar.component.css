@@ -1,7 +1,9 @@
 
 /* HEADER */
 header{
-    background-color: var(--primary);
+    /* background-color: var(--primary);
+    background-color: #2a2a72; */
+/* background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%); */
 }
 nav{
     margin: auto;
@@ -22,7 +24,7 @@ nav{
     font-size: 1.1rem;
     text-decoration: none;
     color: white;
-    transition: color 500ms linear;
+    transition: color 300ms linear;
 }
 .nav__link.btn{
     transition:background-color 300ms linear;

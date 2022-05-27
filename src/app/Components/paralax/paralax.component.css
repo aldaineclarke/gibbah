@@ -21,10 +21,13 @@ section > h2{
 }
 .container-content{
     padding: 0 20px;
+    overflow:hidden;
 }
 .content{
     display: grid;
+    opacity: 0;
     place-items:center;
+    opacity: 0;
 
 }
 .content h2{
@@ -37,12 +40,14 @@ section > h2{
     grid-template-columns: 1fr 1fr;
     display:grid;
     gap: 1rem;
+
 }
 .content-img-wrapper img{
     width: 100%;
 
 }
 .content.active{
+    opacity: 1;
     animation-name: slideUpFade;
     animation-duration: 1000ms;
     animation-fill-mode: forwards;
@@ -96,6 +101,6 @@ section > h2{
 
 }
 @keyframes slideUpFade{
-    0%{opacity: 0; transform: translateY(-100px)};
+    0%{opacity: 0; transform: translateY(100px)};
     100%{opacity: 1; transform: translateY(0)}
 }

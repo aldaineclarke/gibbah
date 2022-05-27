@@ -10,7 +10,7 @@ export class ObservedDirective {
   private _observer:IntersectionObserver | undefined;
   private options = {
     // threshold: 0,
-    rootMargin: "-100px"
+    rootMargin: "-200px"
   }
   constructor(private _element: ElementRef<any>) { 
     this.createAndObserver(this._element.nativeElement);
