@@ -1,6 +1,11 @@
 .d-100{
     height: 100vh;
 }
+app-navbar{
+    position: absolute;
+    width: 100%;
+
+}
 .container-content{
     padding: 0 20px;
 }
@@ -42,18 +47,49 @@
     align-items: center;
     flex-basis: 25%;
 }
+.card__list{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+}
+.card__list li{
+    list-style-type: none;
+    display: flex;
+    font-size: .8rem;
+    gap: 1.5rem;
+
+}
+.card__list li::before{
+    content: "";
+    margin-top: 5px;
+    padding-right: 30px;
+    background-image: url("/assets/IMG/tick-icon.svg");
+    background-position:center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
 .card__title{
     font-weight: bold;
     font-size: 1.8rem;
     color: var(--primary);
 }
+
 .card__cta{
     align-self: stretch;
     background-color: var(--primary);
     color: var(--primary-0);
     border: none;
     padding: 10px;
+    font-size: 1rem;
     font-weight: bold;
+    transition: 300ms ease-in-out box-shadow; 
+
+
+}
+.card__cta:hover{
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 255, 0.2);
 }
 .card__price{
     margin-top: auto;
@@ -102,8 +138,11 @@
     color: pink;
 }
 .hero{
-    min-height: 90vh;
-    background-color: var(--primary);
+    padding-top: 4rem;
+    min-height: 95vh;
+    /* background-color: var(--primary); */
+    background-color: #2a2a72;
+background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
 
 }
 .intro{
